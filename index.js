@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.use("/", (request, response) => {
-  let directory_name = "c:/";
+  let directory_name = "/";
   let filenames = fs.readdirSync(directory_name);
 
   response.write(
