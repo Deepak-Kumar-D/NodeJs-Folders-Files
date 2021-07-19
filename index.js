@@ -22,11 +22,11 @@ app.use("/", (request, response) => {
   filenames.forEach((file) => {
     if (path.extname(file) == "") {
       response.write(
-        `<span style="font-size:16px; color: #E8F0F2"><img src="/images/folder.PNG" width="13px">&ensp;${file}</span><br/>`
+        `<span style="font-size:16px; color: #E8F0F2"><img src="/images/folder.png" width="13px">&ensp;${file}</span><br/>`
       );
     } else {
       response.write(
-        `<span style="font-size:16px; color: #EDEDED"><img src="/images/document.PNG" width="13px">&ensp;${file}</span><br/>`
+        `<span style="font-size:16px; color: #EDEDED"><img src="/images/document.png" width="13px">&ensp;${file}</span><br/>`
       );
     }
   });
